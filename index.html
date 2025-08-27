@@ -1647,3 +1647,17 @@
 <!-- ...to here, right before your </body> tag -->
 <!-- =============== END: EXIT-INTENT DONATION POP-UP CODE =============== -->
 <!-- ===================================================================== -->
+<script>
+  // Force desktop view on mobile by overriding viewport
+  (function() {
+    var meta = document.querySelector("meta[name=viewport]");
+    if (meta) {
+      meta.setAttribute("content", "width=1024, initial-scale=1.0");
+    } else {
+      meta = document.createElement("meta");
+      meta.name = "viewport";
+      meta.content = "width=1024, initial-scale=1.0";
+      document.head.appendChild(meta);
+    }
+  })();
+</script>
